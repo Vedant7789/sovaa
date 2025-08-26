@@ -169,3 +169,26 @@ html {
     font-size: clamp(1rem, 2.5vw, 1.3rem);
   }
 }
+
+/* Mobile background enhancement */
+@media (max-width: 640px) {
+  .mobile-bg-enhance {
+    filter: brightness(15.0) contrast(8.0) !important;
+    transform: scale(0.8) !important;
+    object-position: center 0% !important;
+    z-index: 100 !important;
+    opacity: 1 !important;
+  }
+  
+  .mobile-overlay-reduce {
+    opacity: 0 !important;
+  }
+  
+  .mobile-video-reduce {
+    opacity: 0 !important;
+  }
+  
+  .mobile-floating-reduce {
+    opacity: 0 !important;
+  }
+}
