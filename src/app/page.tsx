@@ -81,7 +81,7 @@ export default function Home() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-red-500/60 pl-6">
                     <h1 className="text-3xl md:text-5xl text-white font-light tracking-[0.1em] uppercase leading-tight">
-                      Da Nang's Ultimate
+                      Da Nang&apos;s Ultimate
                     </h1>
                     <h2 className="text-2xl md:text-4xl text-gray-300 font-light tracking-[0.15em] uppercase leading-tight">
                       Shisha Experience
@@ -138,7 +138,7 @@ export default function Home() {
                       <span className="text-yellow-400 text-xl">★★★★★</span>
                     </div>
                     <p className="text-white text-base font-medium">Rated 4.9/5</p>
-                    <p className="text-gray-300 text-sm">"Best Hookah Experience in Da Nang"</p>
+                    <p className="text-gray-300 text-sm">&ldquo;Best Hookah Experience in Da Nang&rdquo;</p>
                   </div>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function Home() {
       <section id="about" className="py-20 bg-black">
         <div className="container mx-auto px-4">
           <h2 className="text-section-title font-bold mb-10 text-center animate-pulse transition-all duration-1000 ease-in-out hover:text-red-500 hover-glow">
-            Da Nang's Ultimate Shisha Experience
+            Da Nang&apos;s Ultimate Shisha Experience
           </h2>
           <p className="text-body-large text-center max-w-4xl mx-auto mb-16">
             Indulge in Indian & continental flavors, signature drinks, premium hookah (Indian & Russian hookah), and a vibrant bar scene in the heart of Da Nang
@@ -311,7 +311,7 @@ export default function Home() {
           <h3 className="text-xl text-red-500 italic mb-12 text-center">Contact Us</h3>
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-center mb-12">
-              Got questions, feedback, or just want to say hi? We'd love to hear from you! Whether it's about our menu, location, or anything else, don't hesitate to reach out.
+              Got questions, feedback, or just want to say hi? We&apos;d love to hear from you! Whether it&apos;s about our menu, location, or anything else, don&apos;t hesitate to reach out.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
               <div className="glass p-8 rounded-lg">
