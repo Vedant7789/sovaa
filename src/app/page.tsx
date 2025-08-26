@@ -1,18 +1,19 @@
 "use client";
 
+
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="bg-black text-white min-h-screen flex flex-col">
-      <nav className="flex justify-between items-center p-6 bg-black/80 backdrop-blur-md glass sticky top-0 z-50">
+      <nav className="flex justify-between items-center p-2 bg-black/80 backdrop-blur-md glass sticky top-0 z-50">
         <div className="flex items-center">
           <Image 
-            src="/images/images.jpeg" 
+            src="/images/sova%20namecard.pdf%20(1).svg" 
             alt="SOVAA Logo" 
-            width={120}
-            height={40}
-            className="h-10 w-auto object-contain"
+            width={500}
+            height={150}
+            className="h-20 w-auto object-contain"
           />
         </div>
         <div className="flex space-x-8">
@@ -28,12 +29,12 @@ export default function Home() {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 w-full h-full">
           <Image 
-            src="/images/classic-hookah-beautiful-colored-rays-light-smoke-concept-hookah-smoking.jpg" 
-            alt="Classic hookah with beautiful colored light rays and smoke" 
+            src="/images/website%20Bg.png" 
+            alt="Website Background" 
             fill
-            className="object-cover opacity-95 scale-110"
+            className="object-cover opacity-100 scale-90"
             priority
-            style={{ objectPosition: 'center', filter: 'brightness(0.6)' }}
+            style={{ objectPosition: 'center 15%', filter: 'brightness(1.5) contrast(1.2)' }}
           />
         </div>
         
@@ -44,7 +45,7 @@ export default function Home() {
             muted
             playsInline
             className="w-full h-full object-cover"
-            style={{ filter: 'brightness(0.4) contrast(1.1) opacity(0.5)' }}
+            style={{ filter: 'brightness(0.4) contrast(1.1) opacity(0.3)' }}
           >
             <source src="/images/Smoke_43___4K_res.mp4" type="video/mp4" />
           </video>
@@ -60,73 +61,86 @@ export default function Home() {
           <div className="absolute bottom-1/3 left-1/3 w-40 h-40 bg-black/50 rounded-full blur-3xl animate-pulse delay-2000"></div>
         </div>
         
-        <div className="relative z-10 flex items-center justify-center min-h-screen px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-7xl mx-auto items-center">
+        <div className="relative z-10 flex items-center justify-center min-h-screen px-6 py-20">
+          <div className="max-w-7xl mx-auto w-full">
             
-            <div className="text-center lg:text-left">
-              <div className="mb-8 flex justify-center">
-                <Image 
-                  src="/images/images.jpeg" 
-                  alt="SOVAA Logo" 
-                  width={300}
-                  height={100}
-                  className="h-24 md:h-32 w-auto object-contain drop-shadow-lg"
-                />
-              </div>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
               
-              <p className="text-lg md:text-xl text-gray-300 mb-8 font-light tracking-wide uppercase">
-                Da Nang's Ultimate Shisha Experience
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
-                <button className="px-8 py-4 bg-gradient-to-r from-gray-800 to-black text-white font-semibold rounded-full hover:from-black hover:to-gray-900 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-black/25 tracking-wide">
-                  Book Your Table
-                </button>
-                <button 
-                  onClick={() => document.getElementById('flavors')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 border-2 border-white/30 text-white font-semibold rounded-full hover:bg-white/10 transition-all duration-300 backdrop-blur-sm tracking-wide cursor-pointer"
-                >
-                  View Menu
-                </button>
-              </div>
-            </div>
-            
-            <div className="space-y-6">
-              <div className="glass p-6 rounded-xl hover-lift">
-                <h3 className="text-lg font-medium text-white mb-2">Premium Flavors</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Curated selection of the finest shisha flavors from around the world
-                </p>
-              </div>
-              
-              <div className="glass p-6 rounded-xl hover-lift">
-                <h3 className="text-lg font-medium text-white mb-2">Signature Cocktails</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Expertly crafted drinks that complement your shisha experience
-                </p>
-              </div>
-              
-              <div className="glass p-6 rounded-xl hover-lift">
-                <h3 className="text-lg font-medium text-white mb-2">Atmospheric Design</h3>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Sophisticated interior with mood lighting and comfortable seating
-                </p>
-              </div>
-              
-              <div className="glass p-6 rounded-xl border-l-4 border-red-500/50">
-                <div className="flex items-center justify-between mb-3">
-                  <h4 className="text-white font-medium">Open Daily</h4>
-                  <span className="text-white text-sm font-semibold">6PM - 2AM</span>
+              <div className="lg:col-span-5 space-y-8">
+                <div className="relative">
+                  <div className="absolute -inset-6 bg-gradient-to-br from-red-500/15 to-transparent rounded-full blur-3xl animate-pulse"></div>
+                  <Image 
+                    src="/images/sova%20namecard.pdf%20(1).svg" 
+                    alt="SOVAA Logo" 
+                    width={3000}
+                    height={1500}
+                    className="relative h-40 md:h-52 w-auto object-contain drop-shadow-2xl filter drop-shadow-[0_0_20px_rgba(255,255,255,0.3)] drop-shadow-[0_0_40px_rgba(255,255,255,0.1)] animate-pulse"
+                  />
                 </div>
-                <p className="text-gray-400 text-sm">Located in the heart of Da Nang</p>
+                
+                <div className="space-y-4">
+                  <div className="border-l-4 border-red-500/60 pl-6">
+                    <h1 className="text-3xl md:text-5xl text-white font-light tracking-[0.1em] uppercase leading-tight">
+                      Da Nang's Ultimate
+                    </h1>
+                    <h2 className="text-2xl md:text-4xl text-gray-300 font-light tracking-[0.15em] uppercase leading-tight">
+                      Shisha Experience
+                    </h2>
+                  </div>
+                  
+                  <div className="flex flex-col sm:flex-row gap-4 pt-4">
+                    <button className="px-8 py-4 bg-gradient-to-r from-red-600/40 to-red-800/40 text-white font-semibold rounded-full hover:from-red-600/60 hover:to-red-800/60 transition-all duration-500 transform hover:scale-110 shadow-lg hover:shadow-2xl hover:shadow-red-500/50 hover:border-red-500/70 border-2 border-red-500/40 backdrop-blur-sm tracking-wide group">
+                      <span className="group-hover:animate-pulse">Book Your Table</span>
+                    </button>
+                    <button 
+                      onClick={() => document.getElementById('flavors')?.scrollIntoView({ behavior: 'smooth' })}
+                      className="px-8 py-4 border-2 border-white/60 text-white font-semibold rounded-full hover:bg-white/20 hover:border-white/90 hover:shadow-2xl hover:shadow-white/50 transition-all duration-500 transform hover:scale-110 backdrop-blur-sm tracking-wide cursor-pointer group"
+                    >
+                      <span className="group-hover:animate-pulse">View Menu</span>
+                    </button>
+                  </div>
+                </div>
               </div>
               
-              <div className="glass p-6 rounded-xl text-center">
-                <div className="flex justify-center mb-2">
-                  <span className="text-yellow-400">★★★★★</span>
+              <div className="lg:col-span-7">
+                <div className="grid grid-cols-2 gap-4">
+                  <div className="bg-black/20 backdrop-blur-sm border border-white/10 p-5 rounded-xl hover-lift transform hover:scale-105 transition-all duration-300">
+                    <h3 className="text-lg font-semibold text-white mb-3 tracking-wide">Premium Flavors</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed font-light">
+                      Curated selection of the finest shisha flavors from around the world
+                    </p>
+                  </div>
+                  
+                  <div className="bg-black/20 backdrop-blur-sm border border-white/10 p-5 rounded-xl hover-lift transform hover:scale-105 transition-all duration-300">
+                    <h3 className="text-lg font-semibold text-white mb-3 tracking-wide">Signature Cocktails</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed font-light">
+                      Expertly crafted drinks that complement your shisha experience
+                    </p>
+                  </div>
+                  
+                  <div className="bg-black/20 backdrop-blur-sm border border-white/10 p-5 rounded-xl hover-lift transform hover:scale-105 transition-all duration-300">
+                    <h3 className="text-lg font-semibold text-white mb-3 tracking-wide">Atmospheric Design</h3>
+                    <p className="text-gray-300 text-sm leading-relaxed font-light">
+                      Sophisticated interior with mood lighting and comfortable seating
+                    </p>
+                  </div>
+                  
+                  <div className="bg-black/20 backdrop-blur-sm border border-white/10 p-5 rounded-xl border-l-4 border-red-500/60 transform hover:scale-105 transition-all duration-300">
+                    <div className="flex items-center justify-between mb-3">
+                      <h4 className="text-white font-semibold tracking-wide">Open Daily</h4>
+                      <span className="text-white text-sm font-bold">6PM - 2AM</span>
+                    </div>
+                    <p className="text-gray-300 text-sm font-light leading-relaxed">Located in the heart of Da Nang</p>
+                  </div>
+                  
+                  <div className="bg-black/20 backdrop-blur-sm border border-white/10 p-5 rounded-xl text-center transform hover:scale-105 transition-all duration-300 col-span-2">
+                    <div className="flex justify-center mb-2">
+                      <span className="text-yellow-400 text-xl">★★★★★</span>
+                    </div>
+                    <p className="text-white text-base font-medium">Rated 4.9/5</p>
+                    <p className="text-gray-300 text-sm">"Best Hookah Experience in Da Nang"</p>
+                  </div>
                 </div>
-                <p className="text-white text-sm font-medium mb-1">Rated 4.9/5</p>
-                <p className="text-gray-400 text-xs">"Best Hookah Experience in Da Nang"</p>
               </div>
             </div>
           </div>
@@ -320,7 +334,15 @@ export default function Home() {
 
       <footer className="py-6 bg-black border-t border-gray-800 glass">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-white font-bold text-lg mb-4 md:mb-0">SOVAA</div>
+          <div className="mb-4 md:mb-0">
+            <Image 
+              src="/images/sova%20namecard.pdf%20(1).svg" 
+              alt="SOVAA Logo" 
+              width={350}
+              height={100}
+              className="h-16 w-auto object-contain"
+            />
+          </div>
           <div className="flex flex-wrap justify-center space-x-6">
             <a href="#" className="text-white hover:text-red-500 hover-glow text-sm transition-colors duration-300">START</a>
             <a href="#happy-hour" className="text-white hover:text-red-500 hover-glow text-sm transition-colors duration-300">HAPPY HOUR</a>
